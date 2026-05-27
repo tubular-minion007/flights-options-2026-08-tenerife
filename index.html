@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flight Proposals, Tenerife, August 14 to 21</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.45; color: #222; background: #fafafa; }
+    h1, h2 { color: #1f3b5b; }
+    .card { background: white; border: 1px solid #ddd; border-radius: 12px; padding: 18px 20px; margin: 18px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+    .note { color: #555; font-style: italic; }
+    ul { margin-top: 8px; }
+    .map-wrap { overflow-x: auto; }
+    svg { max-width: 100%; height: auto; display: block; }
+    .city { fill: #1f3b5b; }
+    .route-a { stroke: #d9485f; }
+    .route-b { stroke: #2b7a78; }
+    .route-c { stroke: #c68b00; }
+    .route { fill: none; stroke-width: 4; stroke-linecap: round; stroke-dasharray: 8 7; opacity: 0.9; }
+    .label { font-size: 14px; fill: #1f2a36; font-weight: 600; }
+    .legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 14px; }
+    .legend span { display: inline-flex; align-items: center; gap: 8px; }
+    .swatch { width: 22px; height: 4px; border-radius: 999px; display: inline-block; }
+  </style>
+</head>
+<body>
+  <h1>Flight Proposals, Tenerife, around 14 to 21 August</h1>
+  <p class="note">Public planning draft prepared from the voice-note request. This is a structure for route proposals, not live inventory.</p>
+
+  <div class="card">
+    <h2>Route sketch map</h2>
+    <p class="note">Simple visual orientation for the three requested routes, just enough to see who is heading where.</p>
+    <div class="map-wrap">
+      <svg viewBox="0 0 900 420" role="img" aria-label="Simple map showing Geneva, Munich, San Diego, Tenerife and likely hub cities.">
+        <rect x="0" y="0" width="900" height="420" rx="18" fill="#eef5fb"/>
+        <text x="90" y="70" class="label">San Diego</text>
+        <circle cx="110" cy="90" r="7" class="city"/>
+
+        <text x="455" y="120" class="label">Geneva</text>
+        <circle cx="470" cy="140" r="7" class="city"/>
+
+        <text x="585" y="105" class="label">Munich</text>
+        <circle cx="610" cy="125" r="7" class="city"/>
+
+        <text x="515" y="190" class="label">Barcelona</text>
+        <circle cx="540" cy="210" r="6" class="city"/>
+
+        <text x="585" y="175" class="label">Madrid</text>
+        <circle cx="610" cy="195" r="6" class="city"/>
+
+        <text x="430" y="285" class="label">Tenerife</text>
+        <circle cx="455" cy="305" r="8" fill="#b23a48"/>
+
+        <path d="M470 140 Q500 205 455 305" class="route route-a"/>
+        <path d="M470 140 Q530 170 610 195 Q565 255 455 305" class="route route-a" opacity="0.55"/>
+
+        <path d="M610 125 Q585 168 540 210 Q515 255 455 305" class="route route-b"/>
+        <path d="M610 125 Q640 165 610 195 Q560 255 455 305" class="route route-b" opacity="0.55"/>
+
+        <path d="M110 90 Q320 70 540 210 Q500 255 455 305" class="route route-c"/>
+        <path d="M110 90 Q325 55 610 195 Q535 255 455 305" class="route route-c" opacity="0.55"/>
+      </svg>
+    </div>
+    <div class="legend">
+      <span><i class="swatch" style="background:#d9485f"></i> Geneva ↔ Tenerife</span>
+      <span><i class="swatch" style="background:#2b7a78"></i> Munich → Tenerife</span>
+      <span><i class="swatch" style="background:#c68b00"></i> San Diego → Tenerife</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>1. Geneva ↔ Tenerife, 14 to 21 August</h2>
+    <ul>
+      <li><strong>Option A, direct if available:</strong> Depart Geneva on 14 August, return from Tenerife on 21 August.</li>
+      <li><strong>Option B, one-stop comfort route:</strong> via Madrid or Barcelona, with balanced layover times.</li>
+      <li><strong>Option C, lowest-fare style route:</strong> one stop, early departure or late return, depending on price.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2. Munich → Tenerife, same week, flexible</h2>
+    <ul>
+      <li><strong>Option A, closest to main week:</strong> depart 14 to 16 August.</li>
+      <li><strong>Option B, price-flex option:</strong> shift by 1 to 3 days for lower fare.</li>
+      <li><strong>Option C, comfort route:</strong> best duration with minimal layover stress.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>3. San Diego → Tenerife, around same dates</h2>
+    <ul>
+      <li><strong>Option A, best total duration:</strong> San Diego → major European hub → Tenerife.</li>
+      <li><strong>Option B, fewer airline changes:</strong> single alliance routing where possible.</li>
+      <li><strong>Option C, best-value route:</strong> longer itinerary but potentially much cheaper.</li>
+      <li><strong>Likely hubs to compare:</strong> Madrid, Barcelona, London, Frankfurt, Munich, Paris, Lisbon.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Suggested comparison fields</h2>
+    <ul>
+      <li>Total price</li>
+      <li>Total travel time</li>
+      <li>Number of stops</li>
+      <li>Layover length</li>
+      <li>Baggage included or not</li>
+      <li>Refund / change flexibility</li>
+    </ul>
+  </div>
+</body>
+</html>
